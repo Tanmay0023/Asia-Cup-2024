@@ -1,0 +1,220 @@
+/* General page styling */
+body {
+  font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+  /* background-color: #d4ceb0; */
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-image: url("Stadium.jpg");
+  background-size: cover;          /* fills the full page */
+  background-position: center;     /* centers the image */
+  background-repeat: no-repeat;    /* avoids tiling */
+  background-attachment: fixed;    /* keeps image fixed on scroll */
+  height: 100vh;
+}
+
+
+
+nav {
+  border: 5px solid #00509e;
+  text-align: right;
+  margin-right: 0%;
+  background-color: #003366;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.Nav {
+  position: sticky;
+  top: 0%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  color: #ffffff;
+}
+
+nav {
+  position: relative;
+}
+
+.Heading {
+  position: absolute;
+  left: 150px;         /* moves it to left corner */
+  top: 11%;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  border: 5px solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 20%;
+  position: relative;
+  top: 50%;
+  left: 37%;
+  color: #000000;
+  background-color: #ffffff;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: copperplate ;
+}
+
+
+
+h3 {
+  text-align: center;
+  border: 5px solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 15%;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  color: #000000;
+  background-color: #ffffff;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: copperplate ;
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+ ul li  {
+  border: 2px solid #ffffff;     /* greyish thick border */
+  border-radius: 25px;        /* makes corners rounded */
+  text-align: center;
+  padding: 20px;              /* space inside the box */
+  margin: 20px auto;          /* center the box */
+  width: 80%;                 /* box width */
+  background-color: #fafafa;     /* white background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4) /* optional: soft shadow */
+}
+
+ul li b {
+  color: #000000;
+}
+
+ul li:hover {
+  background-color: #f1f1f1;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+#first {
+  background-image: url("1st\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#second {
+  background-image: url("2nd\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#third {
+  background-image: url("3rd\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#fourth {
+  background-image: url("4th\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#fiveth {
+  background-image: url("5th\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#sixth {
+  background-image: url("6th\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#seventh {
+  background-image: url("7th\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#eigtth {
+  background-image: url("8th\ match.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#nineth {
+  background-image: url("Semi\ Final\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#tenth {
+  background-image: url("Semi\ final\ 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+}
+
+#eleven {
+  background-image: url("Final.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* makes text readable */
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 100px;
+}

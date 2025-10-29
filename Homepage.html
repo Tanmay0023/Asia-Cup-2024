@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asia Cup 2024</title>
+  <link rel="stylesheet" href="Homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="Nav">
+    <div class="head-left">
+    <a href="Homepage.html" class="Heading">🏆 Asia Cup 2024</a>
+    <a href="Homepage.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="teams.html">Teams</a>
+    <a href="Schedule.html">Schedule</a>
+    <a href="points.html">Points Table</a>
+    <a href="Result.html">Results</a>
+  </nav>
+
+  <header>
+    <h1>🏆 Asia Cup 2024</h1>
+  </header>
+
+  <main>
+    <section class="intro-box">
+      <h2>Welcome to Asia Cup 2024</h2>
+      <p>Experience the pinnacle of Asian cricket as six powerhouse nations compete for continental supremacy. The Asia Cup 2024 brings together the finest cricket teams from across the continent in a spectacular display of skill, strategy, and sporting spirit.</p>
+      <p>From historic rivalries to emerging challengers, witness the drama unfold as India, Pakistan, Sri Lanka, Bangladesh, Afghanistan, and Nepal battle for glory!</p>
+      
+      <div class="features">
+        <div class="feature-card">
+          <h3><i class="fas fa-trophy"></i> Tournament Format</h3>
+          <p>Two groups of three teams each, followed by Super 4s and the grand finale. Every match counts in this intense competition!</p>
+        </div>
+        <div class="feature-card">
+          <h3><i class="fas fa-map-marker-alt"></i> Venues</h3>
+          <p>Matches held across premier cricket stadiums in Dubai and Sharjah, featuring world-class facilities and electric atmosphere.</p>
+        </div>
+        <div class="feature-card">
+          <h3><i class="fas fa-star"></i> Star Players</h3>
+          <p>Watch the continent's best cricketers showcase their talents, including both seasoned veterans and exciting young prospects.</p>
+        </div>
+      </div>
+
+      <div class="countdown">
+        <h3>Tournament Begins In</h3>
+        <div class="timer" id="countdown-timer">
+          <div class="time-unit">
+            <span class="number" id="days">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="time-unit">
+            <span class="number" id="hours">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="time-unit">
+            <span class="number" id="minutes">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="time-unit">
+            <span class="number" id="seconds">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="cta-button" onclick="location.href='teams.html'">Meet The Teams</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Asia Cup Tournament | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Set the tournament start date (September 2, 2024)
+    const tournamentDate = new Date('September 2, 2024 00:00:00').getTime();
+
+    // Update countdown every second
+    const countdown = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = tournamentDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = days.toString().padStart(2, '0');
+      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById('countdown-timer').innerHTML = '<h3>Tournament Has Begun!</h3>';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
