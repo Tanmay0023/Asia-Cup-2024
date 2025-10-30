@@ -211,6 +211,7 @@ ul li:hover {
   background-repeat: no-repeat;
   color: rgb(0, 0, 0); /* makes text readable */
 /* Footer */
+}   
 footer {
   text-align: center;
   background-color: #003366;
